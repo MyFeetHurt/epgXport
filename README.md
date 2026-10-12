@@ -327,7 +327,7 @@ Fanart.tv plugins if you want none at all.
 
 ### Kodi
 
-- TV source: content **TV shows**, scraper **The Movie Database Python**, language ja-JP, "Use local information" on (the default).
+- TV source: content **TV shows**, scraper **The Movie Database Python**, language ja-JP. Kodi reads the NFO files by itself; nothing else to set.
 - Movie source: content **Movies**, TMDB movie scraper, "Movies are in separate folders that match the movie title" on.
 
 The trade-off, plainly: Kodi treats a complete NFO as final and **doesn't search online** for that show during a normal scan. So you always get our EPG
