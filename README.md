@@ -1,5 +1,7 @@
 # epgXport
 
+[日本語](README.ja.md)
+
 epgXport puts [EPGStation](https://github.com/l3tnun/EPGStation) recordings into a **Jellyfin, Emby, Kodi or Plex** library.
 It runs as an EPGStation "encode" command, but it doesn't encode anything. Instead it:
 
@@ -254,8 +256,9 @@ otherwise the pinned folder is used.
 
 Cast and staff come from EPG labels such as 【出演】, 【声】, 【語り】, 【監督】 and 【脚本】 (also written `[出演]` on a line of its own),
 `役名：名前` lines, `【役名役】名前`, `（役名）名前` and `肩書…名前` (the part before `…` becomes the role). Credit lines in the description
-and in other sections are read too: `出演：菅原文太／安藤昇　監督：深作欣二`, `出演者：渡瀬恒彦、平田満 ほか`, `原作：…／脚本：…／監督：…`, and
-`声の出演：高山みなみ(江戸川コナン)`, where the part in brackets becomes the role. Years, ages and book titles after a name are dropped
+and in other sections are read too: `出演：菅原文太／安藤昇　監督：深作欣二`, `出演者：渡瀬恒彦、平田満 ほか`, `原作：…／脚本：…／監督：…`,
+`出演：西島秀俊(三上)` and `声の出演：高山みなみ(江戸川コナン)`, where the part in brackets becomes the role, and `声の出演：コナン/高山みなみ`.
+In these lines a full-width space separates names (`出演：菅原文太　安藤昇`) except inside one (`高倉　健` → 高倉健). Years, ages and book titles after a name are dropped
 (`香山美子 1966年`, `東野圭吾『虚ろな十字架』（光文社文庫刊）`). Names are never split on `・` (as in `ロバート・レッドフォード`).
 Because the names are the same across recordings, a media server can show everything with one actor: tap 菅原文太 on one film and
 you see his other recorded films and series.
@@ -362,7 +365,7 @@ scraper also works, but then that per-show online refresh isn't available.)
   title formats may need a directory override more often.
 - Every episode gets season 1 (there are no season folders). Season words (第2期, Season 5…) are removed from the folder name.
 - Episode numbers come from the title only (`#12`, `第12話`…), never from the description.
-- Cast and staff parsing is best-effort. Lists separated only by spaces stay one entry, but the full text is always in the plot.
+- Cast and staff parsing is best-effort. In the credit sections, lists separated only by spaces stay one entry, but the full text is always in the plot.
 - Folder names that differ only in spacing or punctuation are merged (`プロフェッショナル仕事の流儀` goes into `プロフェッショナル 仕事の流儀`).
 - The only artwork written is EPGStation's thumbnail per recording (see Thumbnails); show and movie posters and backgrounds come from online sources.
 - Plex: no per-episode NFO data for date-named episodes (see above).
