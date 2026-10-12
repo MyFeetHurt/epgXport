@@ -1,6 +1,6 @@
 # epgXport
 
-[![epgXport デモ動画 (1:44) · Demo video](media/demo-poster.jpg)](media/epgXport-demo.mp4)
+[![epgXport デモ動画 (1:44) · Demo video](media/demo-poster.jpg)](https://cdn.jsdelivr.net/gh/MyFeetHurt/epgXport@main/media/epgXport-demo.mp4)
 
 epgXport puts [EPGStation](https://github.com/l3tnun/EPGStation) recordings into a **Jellyfin, Emby, Kodi or Plex** library.
 It runs as an EPGStation "encode" command, but it doesn't encode anything. Instead it:
