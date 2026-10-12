@@ -1,0 +1,12 @@
+# Publish allow-list: everything else in this folder is private (notes, test env, reference material).
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/epgXport.js
+!/test/
+/test/*
+!/test/*.test.js
+!/test/fixtures/
+/test/fixtures/*
+!/test/fixtures/titles.tsv
