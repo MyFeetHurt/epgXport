@@ -1,7 +1,5 @@
 # epgXport
 
-[![epgXport デモ動画 (1:44) · Demo video](media/demo-poster.jpg)](https://cdn.jsdelivr.net/gh/MyFeetHurt/epgXport@main/media/epgXport-demo.mp4)
-
 epgXport puts [EPGStation](https://github.com/l3tnun/EPGStation) recordings into a **Jellyfin, Emby, Kodi or Plex** library.
 It runs as an EPGStation "encode" command, but it doesn't encode anything. Instead it:
 
@@ -17,6 +15,10 @@ It runs as an EPGStation "encode" command, but it doesn't encode anything. Inste
 It is one file, `epgXport.js`, with no dependencies. It uses the Node.js that EPGStation already runs on (Node.js 14.14 or newer; tested on 18 and 24)
 and makes **no online lookups**.
 Your media server's own scrapers (TMDB, TVDB…) still fetch artwork and metadata for shows they can find. For shows they can't find, the NFO data is used.
+
+![An EPGStation recording, its library name and NFO, and the same film in Jellyfin and Kodi](media/demo.gif)
+
+Full video (1:44): [epgXport-demo.mp4](https://cdn.jsdelivr.net/gh/MyFeetHurt/epgXport@main/media/epgXport-demo.mp4) · Screenshots: [EPGStation](media/epgstation.png) / [Jellyfin](media/jellyfin-actor.png)
 
 ## Library layout
 
